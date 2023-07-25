@@ -331,12 +331,12 @@ img {
 
 .names-frame {
     padding: 32px 0;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .bg-color-names {
     background-color: var(--primary-white-color);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .team-pic {
@@ -372,6 +372,7 @@ img {
 
 .customers {
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .customers-title {
@@ -381,7 +382,6 @@ img {
 .customers-list {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .customers-item {
@@ -401,15 +401,17 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
     margin-bottom: 8px;
+    color: var(--customers-icons-color);
 }
 
 .customers-list-icon {
-    fill: var(--customers-icons-color);
+    fill: currentColor;
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
     border: 1px solid var(--accent-color);
+    color: var(--accent-color);
 }
 
 .customers-list-link:hover .customers-list-icon,
@@ -484,11 +486,14 @@ img {
 }
 
 .project-card {
-    display: block; 
     width: calc((100% - 48px) / 3)
 }
 
-.project-card:hover {
+.project-card-nav {
+    display: block; 
+}
+
+.project-card-nav:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
